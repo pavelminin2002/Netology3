@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class Main {
@@ -11,7 +12,7 @@ public class Main {
                 result.add(x);
             }
         }
-        result.sort(Integer::compareTo);
+        result.sort(Comparator.naturalOrder());
         System.out.println(result);
     }
 }
